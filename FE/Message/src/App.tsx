@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import io from "socket.io-client";
-const socket: any = io("http://localhost:8080");
+const socket: any = io("https://vercel-server-dun.vercel.app");
+// const socket: any = io("http://localhost:8080");
 
 const App: React.FC = () => {
   const [room, setRoom] = useState("");
